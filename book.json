@@ -1,0 +1,20 @@
+{
+    "plugins": [
+        "richquotes"
+    ],
+    "pluginsConfig": {
+        "richquotes": {
+            "info": true,
+            "note": true,
+            "tag": true,
+            "comment": true,
+            "hint": true,
+            "success": true,
+            "warning": true,
+            "caution": true,
+            "danger": true,
+            "quote": true,
+            "todo": true
+        }
+    }
+}

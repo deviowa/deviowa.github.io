@@ -1,0 +1,9 @@
+{
+  "name": "mybook",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Me <me@gmail.com>",
+  "dependencies": {
+    "gitbook-plugin-richquotes": "0.0.3"
+  }
+}
