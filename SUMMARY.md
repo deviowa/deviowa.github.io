@@ -7,4 +7,5 @@
    * [Package Manager](chapter_1/a_package_manager.md)
    * [Version Controll System](chapter_1/a_version_controll_system.md)
 * [Using the Shell / Command Line Interface](using_the_shell__command_line_interface/README.md)
+* [Excercises](excercises/README.md)
 
