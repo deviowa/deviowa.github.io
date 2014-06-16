@@ -60,27 +60,13 @@ In addition to taking directory, filenames or other text as arguments to a progr
 ## Some commonly used command line tools / programs
 Here is a list of some common commands / programs in case you want to play around with the command line:
 
- - `ls`    lists the files in the given directory
-
-
-
- - `pwd` print working directory
-
-
- - `cd <directory_path>` changes the working directory (if you run just `cd` without an argument, it go to your *home* directory)
-
-
- - `cp <source_file> <target_file>` copies the file named &lt;source_file&gt; to the file called &lt;target_file&gt;
-
-
- - `mv <old_filename> <new_filename>` moves/renames the file
-
-
- - `rm <filename>`<br/>
-    deltes the file (completly, no trash can involved)
-
-
- - `say "hello world"` <br/>
-    this one is mac specific
-
-
+| Command       | Description                                |
+|---------------|--------------------------------------------|
+| `ls`          | List files in the given directory. `ls` by itself will show the contents of current directory. |
+| `pwd`         | Print Working Directory.  Shows you the directory you're presently in. |
+| `cd <directory>` | Change into Directory.  Changes your working directory to the directory specified by `<directory>`. On most systems, just running the `cd` command brings you back to your home directory.  The directory path can be relative e.g. `../../work` or absolute e.g. `/Users/jamesbond/missions` |
+| `cp <source> <target>` | Copies file specified by `<source>` to `<target>`. `<target>` can name a file or a directory.  If `<target>` is a directory, the program creates a file in `<target>` with the same name as `<source>`. e.g. `cp a.txt b.txt` creates a copy of `a.txt` named `b.txt` in the current directory.  `cp a.txt dir/b.txt` creates a copy named `b.txt` in a directory named `dir` under the current directory.  `cp a.txt dir/` creates a copy of `a.txt` named `a.txt` in the `dir` directory under the current directory.  The `cp` command can also accept `<source>` as a directory in which case `-r` flag is required to initiate a recursive copy. |
+| `mv <source> <target>` | Same as the `cp` command but renames the `<source>` to `<target>`, in other words, `<source>` will not exist after the command is done running.  Also, works seamlessly with directories and no `-r` flag is required. |
+| `rm <target>` | Remove the file specified by `<target>`.  To remove a directory use the `-r` flag.  To force a removal use the `-f` flag.|
+| `mkdir <name>` | Create a directory named `<name>`.  Again, `<name>` could indicate a relative or an absolute path. e.g. `mkdir test` will create a directory in the current directory and `mkdir /Users/jamesbond/topsecret` creates a directory named `topsecret` in `/Users/jamesbond` directory.|
+| `rmdir <name>` | Remove a directory named `<name>`. Again `<name>` could be absolute or relative path to the directory.  A directory would need to be empty (i.e. contain no other files and directories) for this command to work.  If you intend to delete a directory and all its subdirectories, use the `rm -r <name>` command.|
